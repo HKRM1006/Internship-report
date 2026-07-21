@@ -5,9 +5,7 @@ weight: 1
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+
 
 # SESSION POLICIES IN AMAZON EKS POD IDENTITY
 
@@ -29,3 +27,4 @@ This feature is especially useful when you have many applications running on the
 ...Link...
 
 ...Guide...
+
