@@ -1,4 +1,4 @@
-baseURL = "https://github.com/HKRM1006/Internship-report/"
+baseURL = "https://hkrm1006.github.io/Internship-report/"
 relativeURLs = false
 canonifyURLs = false
 defaultContentLanguage = "en"
