@@ -1,8 +1,8 @@
 baseURL = "https://hkrm1006.github.io/Internship-report/"
 relativeURLs = false
-canonifyURLs = false
+canonifyURLs = true
 defaultContentLanguage = "en"
-
+buildFuture = true
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
 
