@@ -16,7 +16,7 @@ home = [ "HTML", "RSS", "JSON"]
   # Git hub repo link
   editURL = ""
   description = ""
-  author = "thienlh@thienlu.com"
+  author = "Phan Dang Nhat Huy"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
@@ -26,16 +26,16 @@ home = [ "HTML", "RSS", "JSON"]
 title = "Internship Report"
 weight = 1
 [Languages.en.params]
-languageName = "English"
+label = "English"
 
 [[Languages.en.menu.shortcuts]]
-name = "<i class='fab fa-aws'></i> AWS Study Group - Blog"
+name = "<i class='fab fa-aws fa-fw'></i> AWS Study Group Blog"
 identifier = "AWS Study Group"
 url = "https://awsstudygroup.com"
 weight = 20
 
 [[Languages.en.menu.shortcuts]]
-name = "<i class='fab fa-facebook'></i> AWS Study Group - FB Group"
+name = "<i class='fab fa-facebook fa-fw'></i> AWS Study Group FB"
 identifier = "AWS Study Group FB"
 url = "https://www.facebook.com/groups/awsstudygroupfcj"
 weight = 20
@@ -44,16 +44,16 @@ weight = 20
 title = "Báo cáo thực tập"
 weight = 2
 [Languages.vi.params]
-languageName = "Tiếng Việt"
+label = "Tiếng Việt"
 
 [[Languages.vi.menu.shortcuts]]
-name = "<i class='fab fa-aws'></i> AWS Study Group - Blog"
+name = "<i class='fab fa-aws fa-fw'></i> AWS Study Group Blog"
 identifier = "AWS Study Group"
 url = "http://awsstudygroup.com"
 weight = 20
 
 [[Languages.vi.menu.shortcuts]]
-name = "<i class='fab fa-facebook'></i> AWS Study Group - Nhóm FB"
+name = "<i class='fab fa-facebook fa-fw'></i> AWS Study Group FB"
 identifier = "AWS Study Group FB"
 url = "https://www.facebook.com/groups/awsstudygroupfcj"
 weight = 20
