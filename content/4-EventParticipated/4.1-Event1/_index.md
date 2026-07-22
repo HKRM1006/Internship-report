@@ -1,129 +1,81 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 2026-06-12
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “Saturday Meet up - First Cloud AI Journey”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Decode the reality of DevOps and Data Analytics jobs and define career paths
+- Equip participants with critical thinking, problem-solving skills, and a personal competence growth model
+- Share standard MNC recruitment processes and modern corporate cultural values
+- Spread the community "Share-Back" spirit and the aspiration to contribute to the nation's digital lifeblood
+- Introduce, demo, and explain a URL shortener website and its underlying design architecture
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Trong H. Truong** – DevOps Engineer at Endava Vietnam
+- **Danh Hoang Hieu Nghi** – AI Engineer / AWS Community Builder / AWS Student Builder Group Leader
+- **Mr. Dat Pham** – Data Analytics Engineer
+- **Mr. Cuong Nguyen** – Process Engineer
+- **Dinh Trung Kien** – Lead Developer
+- **Nguyen Minh Tho** – Student
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Realities of DevOps and Data Analytics Roles
 
-- Long product release cycles → Lost revenue/missed opportunities
-- Inefficient operations → Reduced productivity, higher costs
-- Non-compliance with security regulations → Security breaches, loss of reputation
+- **DevOps Reality**: Beyond simply writing CI/CD scripts or using Docker/Kubernetes, a true DevOps engineer must handle on-call shifts, troubleshoot system incidents, debug, optimize cloud costs, and clearly define problem ownership across parties.
+- **Data Analytics Reality**: Work varies flexibly depending on the industry. At Kamereo, data analysts focus on operational performance and finding the root causes of GMV fluctuations. At Colgate-Palmolive, analysts tackle IoT machine data and optimize factory production costs.
 
-#### Transitioning to modern application architecture – Microservices
+#### Personal Competence Development Model
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+**5 stages of career advancement for individuals**:
 
-- **Queue Management**: Handle asynchronous tasks
-- **Caching Strategy**: Optimize performance
-- **Message Handling**: Flexible inter-service communication
+- **Stage 1 - Follower**: An executor who follows detailed instructions to build foundational skills.
+- **Stage 2 - Learner**: An active learner who begins to understand approaches and ask in-depth questions.
+- **Stage 3 - Problem Solver**: A crucial milestone where individuals proactively analyze business problems and propose optimal solutions rather than just following a checklist.
+- **Stage 4 - System Thinker**: A systemic thinker who grasps the big picture and understands the interconnections between departments for long-term optimization.
+- **Stage 5 - Super Star**: A leader who builds strategic vision and develops the next generation.
 
-#### Domain-Driven Design (DDD)
+#### Processes and Culture at Multinational Corporations (MNCs)
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts
-- **Bookstore case study**: Demonstrates real-world DDD application
-- **Context mapping**: 7 patterns for integrating bounded contexts
+- **4-step Recruitment Process**: Starting with resume screening through ATS systems, a competence test (logic/algorithms), behavioral and technical interviews using the STAR model, and finally a cultural fit assessment with leadership.
+- **No-Blame Post-Mortem Culture**: Instead of shifting blame to individuals during an incident, companies focus on finding root causes to improve the system.
+- **Caring & Inclusive Culture**: Centering people and respecting diversity to grow together.
 
-#### Event-Driven Architecture
+#### Strategic Vision and the "Digital Lifeblood" Mission
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming
-- **Benefits**: Loose coupling, scalability, resilience
-- **Sync vs async comparison**: Understanding the trade-offs
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria for appropriate choice
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+- **Upgrading Standards**: Transitioning from just "making it work" to meeting strict international standards like ISO 27001, SOC 2, or GDPR to protect digital assets and national data sovereignty.
+- **"Doing Right" Philosophy**: Encouraging every engineer to fulfill three roles: Being a decent person, serving through craftsmanship, and being a responsible citizen toward the technological legacy left for future generations.
+- **Generational Mission**: Bearing the nation's "digital lifeblood", opening up the flow of knowledge and digital infrastructure for the country.
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Prioritizing Foundations Over Tools
 
-- **Business-first approach**: Always start from the business domain, not the technology
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams
-- **Bounded contexts**: Identifying and managing complexity in large systems
+Tools may change, but core knowledge of Linux, Networking, Programming, and Git remains enduringly valuable.
 
-#### Technical Architecture
+#### Business Problem-Solving Mindset
 
-- **Event storming technique**: Practical method for modeling business processes
-- Use **event-driven communication** instead of synchronous calls
-- **Integration patterns**: When to use sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless
+Instead of blindly following a checklist, it is essential to understand the business domain, analyze root causes, and use data to tell meaningful stories that drive action.
 
-#### Modernization Strategy
+#### Soft Skills Are Essential
 
-- **Phased approach**: No rushing — follow a clear roadmap
-- **7Rs framework**: Multiple modernization paths depending on the application
-- **ROI measurement**: Cost reduction + business agility
-
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams
-- **Refactor microservices**: Use bounded contexts to define service boundaries
-- **Implement event-driven patterns**: Replace some sync calls with async messaging
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity
+Critical thinking, communication skills, and clear problem ownership are key to working effectively in professional environments.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+- **Open and Energetic Atmosphere**: The event created a warm and engaging space connecting speakers (from MNCs, AWS Communities, and major enterprises) with attendees. Realistic insights into DevOps and Data Analytics cleared up many industry questions.
+- **Deeper Understanding of MNC Work Culture**
 
-#### Learning from highly skilled speakers
+#### Some Event Photos
 
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.
+*Due to an oversight on my part and because this was the first event I ever attended, I forgot to take pictures as evidence.*
 
-#### Hands-on technical exposure
-
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.
-
-#### Leveraging modern tools
-
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.
-
-#### Networking and discussions
-
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.
-
-#### Lessons learned
-
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.
-
-#### Some event photos
-
-*Add your event photos here*
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+> Overall, the event helped me better understand the DevOps and Data Analytics fields, along with essential skills, problem-solving mindsets, and multinational corporate work cultures.
 

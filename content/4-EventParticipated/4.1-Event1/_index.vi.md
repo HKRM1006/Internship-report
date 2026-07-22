@@ -81,3 +81,4 @@ Tư duy phản biện, khả năng giao tiếp và xác định rõ quyền sở
 
 > Tổng thể, sự kiện giúp em hiểu rõ hơn về 2 ngành nghề DevOps và Data Analytics. Những kỹ năng quan trọng, tư duy giải quyết vấn đề và văn hóa làm việc công ty đa quốc gia
 
+
