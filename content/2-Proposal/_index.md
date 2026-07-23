@@ -1,137 +1,117 @@
 ---
 title: "Proposal"
-date: 2024-01-01
+date: 2026-06-20
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
 
-In this section, you need to summarize the contents of the workshop that you **plan** to conduct.
-
-# IoT Weather Platform for Lab Research
-
-## A Unified AWS Serverless Solution for Real-Time Weather Monitoring
+# InsightShare
+## A smart image & document sharing platform on AWS (serverless + AI)
 
 ### 1. Executive Summary
 
-The IoT Weather Platform is designed for the ITea Lab team in Ho Chi Minh City to enhance weather data collection and analysis. It supports up to 5 weather stations, with potential scalability to 10-15, utilizing Raspberry Pi edge devices with ESP32 sensors to transmit data via MQTT. The platform leverages AWS Serverless services to deliver real-time monitoring, predictive analytics, and cost efficiency, with access restricted to 5 lab members via Amazon Cognito.
+InsightShare is a web application for uploading, analyzing and sharing images/documents. On upload, AWS AI services label images, extract document text, and answer questions or summarize a document in the same language as the question, so files can be found by content and not only by name. It is fully **serverless** on AWS (region `ap-southeast-1`): no servers to manage, per-request billing, scaling with load. It uses S3, Lambda, API Gateway, DynamoDB, CloudFront and Cognito, with three AI services: Rekognition, Textract and Bedrock (Claude). Amazon Cognito handles sign-in, and the JWT `sub` claim scopes each file to its owner so users see only their own files.
 
 ### 2. Problem Statement
 
-### What’s the Problem?
+*The problem*
+- Users need a fast way to store and share images/documents, but self-hosted solutions (an EC2 instance running 24/7) incur fixed costs even when idle and require manual operation, patching and scaling.
+- As the number of files grows, finding the right file is hard because search is name-only.
+- Even after finding a document, understanding what is inside still means opening and reading it.
 
-Current weather stations require manual data collection, becoming unmanageable with multiple units. There is no centralized system for real-time data or analytics, and third-party platforms are costly and overly complex.
+*The solution*
 
-### The Solution
+InsightShare centralizes data and processing on a unified serverless stack:
+- **Storage & sharing:** S3 stores files (private bucket), shared via time-limited presigned URLs; metadata lives in DynamoDB.
+- **Business logic:** Lambda + API Gateway generate presigned URLs, orchestrate AI analysis, and read/write data.
+- **Content understanding with AI:** Rekognition labels images, Textract extracts document text, and Bedrock (a Claude model) answers questions and summarizes documents in the same language as the question. All are ready-to-call services, with no model training.
+- **Smart search:** labels and extracted text are stored in DynamoDB to find files by content.
 
-The platform uses AWS IoT Core to ingest MQTT data, AWS Lambda and API Gateway for processing, Amazon S3 for storage (including a data lake), and AWS Glue Crawlers and ETL jobs to extract, transform, and load data from the S3 data lake to another S3 bucket for analysis. AWS Amplify with Next.js provides the web interface, and Amazon Cognito ensures secure access. Similar to Thingsboard and CoreIoT, users can register new devices and manage connections, though this platform operates on a smaller scale and is designed for private use. Key features include real-time dashboards, trend analysis, and low operational costs.
-
-### Benefits and Return on Investment
-
-The solution establishes a foundational resource for lab members to develop a larger IoT platform, serving as a study resource, and provides a data foundation for AI enthusiasts for model training or analysis. It reduces manual reporting for each station via a centralized platform, simplifying management and maintenance, and improves data reliability. Monthly costs are $0.66 USD per the AWS Pricing Calculator, with a 12-month total of $7.92 USD. All IoT equipment costs are covered by the existing weather station setup, eliminating additional development expenses. The break-even period of 6-12 months is achieved through significant time savings from reduced manual work.
+*Benefits*
+- The serverless model bills per use; at demo scale the total stays under $1/month.
+- Files are non-public, permissions follow IAM least-privilege, and CloudWatch monitors the system.
+- AI labels and extracted text let files be found by what is inside them, not only by name.
 
 ### 3. Solution Architecture
 
-The platform employs a serverless AWS architecture to manage data from 5 Raspberry Pi-based stations, scalable to 15. Data is ingested via AWS IoT Core, stored in an S3 data lake, and processed by AWS Glue Crawlers and ETL jobs to transform and load it into another S3 bucket for analysis. Lambda and API Gateway handle additional processing, while Amplify with Next.js hosts the dashboard, secured by Cognito. The architecture is detailed below:
+*Overview*
+The browser loads the static frontend from **S3 + CloudFront (HTTPS)** → signs in through **Amazon Cognito** → calls **API Gateway** → **Lambda (Python)**. API Gateway runs a JWT authorizer that validates the Cognito token, and Lambda reads the `sub` claim to scope every file to its owner. Lambda generates presigned URLs so the browser uploads/downloads directly to **S3**. After upload, Lambda calls the AI services (**Rekognition / Textract / Bedrock**) and stores results in **DynamoDB** for search. **CloudWatch** monitors logs/metrics; **IAM** enforces least-privilege access.
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
+![InsightShare Architecture](/images/2-Proposal/insightshare_architecture-v6.png)
 
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
+*AWS Services Used*
 
-### AWS Services Used
+| Service | Function |
+|---|---|
+| Amazon S3 | Store user files; host the static web frontend |
+| Amazon CloudFront | CDN for the web, HTTPS, faster delivery |
+| Amazon API Gateway | Public API gateway for the application; a JWT authorizer validates Cognito tokens |
+| Amazon Cognito | User sign-in (Hosted UI); the JWT `sub` claim scopes each file to its owner for per-user isolation |
+| AWS Lambda | Business logic (Python/boto3); a single handler routes API Gateway HTTP API requests by method and path |
+| Amazon DynamoDB | Store metadata + AI labels + extracted text for search |
+| Amazon Rekognition | Image labeling (DetectLabels) |
+| Amazon Textract | Text extraction from PDF/scanned images (DetectDocumentText) |
+| Amazon Bedrock (Claude) | Document Q&A and summary, answered in the question's language (InvokeModel) |
+| Amazon CloudWatch | Logs, metrics, alarms for monitoring |
+| AWS IAM | Least-privilege access for Lambda and each AI service |
 
-- **AWS IoT Core**: Ingests MQTT data from 5 stations, scalable to 15.
-- **AWS Lambda**: Processes data and triggers Glue jobs (two functions).
-- **Amazon API Gateway**: Facilitates web app communication.
-- **Amazon S3**: Stores raw data in a data lake and processed outputs (two buckets).
-- **AWS Glue**: Crawlers catalog data, and ETL jobs transform and load it.
-- **AWS Amplify**: Hosts the Next.js web interface.
-- **Amazon Cognito**: Secures access for lab users.
-
-### Component Design
-
-- **Edge Devices**: Raspberry Pi collects and filters sensor data, sending it to IoT Core.
-- **Data Ingestion**: AWS IoT Core receives MQTT messages from the edge devices.
-- **Data Storage**: Raw data is stored in an S3 data lake; processed data is stored in another S3 bucket.
-- **Data Processing**: AWS Glue Crawlers catalog the data, and ETL jobs transform it for analysis.
-- **Web Interface**: AWS Amplify hosts a Next.js app for real-time dashboards and analytics.
-- **User Management**: Amazon Cognito manages user access, allowing up to 5 active accounts.
+*Component Design*
+- **Frontend:** a static web page (HTML/JS) to pick files, show the list with AI labels, a content search box, and a box to ask a question about a document.
+- **API:** endpoints to request an upload URL, confirm upload (triggers AI analysis), list/search files, get a download URL, and ask a question about a document.
 
 ### 4. Technical Implementation
 
-**Implementation Phases**
-This project has two parts—setting up weather edge stations and building the weather platform—each following 4 phases:
+*Implementation Phases*
 
-- Build Theory and Draw Architecture: Research Raspberry Pi setup with ESP32 sensors and design the AWS serverless architecture (1 month pre-internship)
-- Calculate Price and Check Practicality: Use AWS Pricing Calculator to estimate costs and adjust if needed (Month 1).
-- Fix Architecture for Cost or Solution Fit: Tweak the design (e.g., optimize Lambda with Next.js) to stay cost-effective and usable (Month 2).
-- Develop, Test, and Deploy: Code the Raspberry Pi setup, AWS services with CDK/SDK, and Next.js app, then test and release to production (Months 2-3).
+| Phase | Description |
+|---|---|
+| 1. Foundations & design | Study AWS fundamentals, finalize the topic, draw the architecture, set up the account securely (MFA, IAM user, CLI, Budgets), design the DynamoDB schema. |
+| 2. Basic application | Build the web app (FastAPI + frontend) locally, separate the storage and AI layers. |
+| 3. Move to the cloud | S3 + presigned URLs, Lambda + API Gateway, DynamoDB integration and presigned download links. |
+| 4. AI layer & search | Integrate Rekognition/Textract/Bedrock, store results in DynamoDB, build smart search. |
+| 5. Finalize & operate | CloudFront + HTTPS, CloudWatch logs/alarms, cost/security optimization, a repeatable deploy/cleanup script. |
 
-**Technical Requirements**
+*Technical Requirements*
+- An AWS account (Free Tier), region `ap-southeast-1` (Singapore).
+- Tools: AWS CLI, Python 3, boto3.
+- Knowledge: S3, Lambda, API Gateway, DynamoDB, IAM, CloudWatch and AI services (Rekognition, Textract, Bedrock).
 
-- Weather Edge Station: Sensors (temperature, humidity, rainfall, wind speed), a microcontroller (ESP32), and a Raspberry Pi as the edge device. Raspberry Pi runs Raspbian, handles Docker for filtering, and sends 1 MB/day per station via MQTT over Wi-Fi.
-- Weather Platform: Practical knowledge of AWS Amplify (hosting Next.js), Lambda (minimal use due to Next.js), AWS Glue (ETL), S3 (two buckets), IoT Core (gateway and rules), and Cognito (5 users). Use AWS CDK/SDK to code interactions (e.g., IoT Core rules to S3). Next.js reduces Lambda workload for the fullstack web app.
+### 5. Budget Estimation
 
-### 5. Timeline & Milestones
+At demo scale the pay-per-use serverless model and Free Tier keep cost under $1/month. An AWS Budget `InsightShare-Monthly` with a $5/month limit tracks spend. Detailed figures use the [AWS Pricing Calculator](https://calculator.aws/).
 
-**Project Timeline**
+At real scale the cost grows with usage, dominated by the AI services (the trade-off for not training or hosting models). A rough monthly estimate for **1,000 active users** (about 20,000 uploads, each analyzed once, plus browsing and search):
 
-- Pre-Internship (Month 0): 1 month for planning and old station review.
-- Internship (Months 1-3): 3 months.
-  - Month 1: Study AWS and upgrade hardware.
-  - Month 2: Design and adjust architecture.
-  - Month 3: Implement, test, and launch.
-- Post-Launch: Up to 1 year for research.
+| Service | Basis | Est./month |
+| --- | --- | --- |
+| AWS Lambda | ~120k invocations | ~$0.10 |
+| Amazon API Gateway | ~120k HTTP requests | ~$0.12 |
+| Amazon S3 | ~40 GB stored + requests | ~$1.00 |
+| Amazon DynamoDB (on-demand) | ~140k read/write | ~$0.20 |
+| Amazon Rekognition | 20k images (DetectLabels) | ~$20.00 |
+| Amazon Bedrock (Claude Haiku) | ~20k summaries + Q&A | ~$15.00 |
+| Amazon CloudFront | ~30 GB out | ~$2.50 |
+| **Total** | | **~$40/month** |
 
-### 6. Budget Estimation
+### 6. Risk Assessment
 
-You can find the budget estimation on the [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01).
-Or you can download the [Budget Estimation File](../attachments/budget_estimation.pdf).
+| Risk | Impact | Probability | Mitigation |
+|---|---|---|---|
+| Misconfigured IAM/policy causing access errors | Medium | Medium | Least-privilege, careful testing before broadening permissions |
+| Unexpected cost (many AI calls) | Low | Low | Budget Alert, limit file size/type sent to AI, clean up after testing |
+| Large files causing Lambda/API Gateway timeouts | Medium | Low | Presigned URLs upload directly to S3; call AI asynchronously via S3 events |
+| AI services slow or results not yet accurate | Low | Medium | Asynchronous AI analysis, so files remain downloadable even before analysis completes |
 
-### Infrastructure Costs
+*Contingency plan:* keep a scripted teardown (cleanup-aws.ps1) to remove all resources quickly.
 
-- AWS Services:
-  - AWS Lambda: $0.00/month (1,000 requests, 512 MB storage).
-  - S3 Standard: $0.15/month (6 GB, 2,100 requests, 1 GB scanned).
-  - Data Transfer: $0.02/month (1 GB inbound, 1 GB outbound).
-  - AWS Amplify: $0.35/month (256 MB, 500 ms requests).
-  - Amazon API Gateway: $0.01/month (2,000 requests).
-  - AWS Glue ETL Jobs: $0.02/month (2 DPUs).
-  - AWS Glue Crawlers: $0.07/month (1 crawler).
-  - MQTT (IoT Core): $0.08/month (5 devices, 45,000 messages).
+### 7. Expected Outcomes
 
-Total: $0.7/month, $8.40/12 months
+*Technical Improvements*
+- A working end-to-end web application: upload → automatic AI content analysis → list → content-based search → ask a question about a document → download via presigned link.
+- Serverless architecture combined with AWS managed AI services.
+- Document Q&A implemented with Amazon Bedrock (Claude): the `ask` endpoint takes a document and a question, and is wired to the `bedrock:InvokeModel` call with the inference-profile model id and full request/response handling.
 
-- Hardware: $265 one-time (Raspberry Pi 5 and sensors).
-
-### 7. Risk Assessment
-
-#### Risk Matrix
-
-- Network Outages: Medium impact, medium probability.
-- Sensor Failures: High impact, low probability.
-- Cost Overruns: Medium impact, low probability.
-
-#### Mitigation Strategies
-
-- Network: Local storage on Raspberry Pi with Docker.
-- Sensors: Regular checks and spares.
-- Cost: AWS budget alerts and optimization.
-
-#### Contingency Plans
-
-- Revert to manual methods if AWS fails.
-- Use CloudFormation for cost-related rollbacks.
-
-### 8. Expected Outcomes
-
-#### Technical Improvements:
-
-Real-time data and analytics replace manual processes.
-Scalable to 10-15 stations.
-
-#### Long-term Value
-
-1-year data foundation for AI research.
-Reusable for future projects.
-
+*Long-term Value*
+- An extensible platform: add user sign-in (Cognito), orchestrate a multi-step AI pipeline (Step Functions), support more file types.
+- Detailed workshop documentation so others can follow and extend the project.
