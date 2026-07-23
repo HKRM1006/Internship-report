@@ -1,7 +1,7 @@
 ---
 title: "Event 1"
-date: 2026-06-12
-weight: 1**Giải mã thực tế công việc DevOps, Data Analytics và định hướng lộ trình nghề nghiệp**
+date: 2026-06-13
+weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
@@ -68,17 +68,14 @@ Thay vì chỉ làm theo checklist, cần thấu hiểu ngành nghề (domain), 
 
 Tư duy phản biện, khả năng giao tiếp và xác định rõ quyền sở hữu vấn đề (ownership) là chìa khóa để làm việc hiệu quả trong môi trường chuyên nghiệp
 
-
 ### Trải nghiệm trong event
 
 - Không khí cởi mở và giàu năng lượng: Sự kiện tạo ra một không gian giao lưu vô cùng gần gũi giữa dàn diễn giả(từ các MNCs, AWS Community đến doanh nghiệp lớn) và người tham dự. Những góc nhìn chân thực, không về nghề DevOps và Data Analytics giúp giải đáp nhiều thắc mắc về ngành.
 - Hiểu thêm về văn hóa làm việc trong các tập đoàn đa quốc gia
-
 
 #### Một số hình ảnh khi tham gia sự kiện
 
 * Do sai sót từ phía em và đây là buổi event đầu tiên mà em tham dự, em đã quên chụp lại hình minh chứng.
 
 > Tổng thể, sự kiện giúp em hiểu rõ hơn về 2 ngành nghề DevOps và Data Analytics. Những kỹ năng quan trọng, tư duy giải quyết vấn đề và văn hóa làm việc công ty đa quốc gia
-
 

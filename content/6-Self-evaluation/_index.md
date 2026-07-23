@@ -6,32 +6,25 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
+During my internship at **Amazon Web Services Vietnam Company Limited** (Workforce Bootcamp - First Cloud AI Journey) from **01/06/2026** to **14/08/2026**, I participated in developing the **InsightShare** project—an image and document sharing application integrated with information retrieval and Large Language Models (LLM) for Q&A. Through this project, I strengthened my **knowledge regarding AWS S3, Lambda, API, and Bedrock**.
+To objectively reflect on my internship, I would like to evaluate myself based on the following criteria:
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
-
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
-
-| No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
-| 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
-| 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
-| 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
-| 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
-| 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
-| 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
+| No. | Criteria | Description | Good | Fair | Average |
+| --- | --- | --- | --- | --- | --- |
+| 1 | **Professional knowledge & skills** | Applied knowledge of AWS services to practical projects | ✅ | ☐ | ☐ |
+| 2 | **Ability to learn** | Self-learned knowledge about services | ☐ | ✅ | ☐ |
+| 3 | **Proactiveness** | Proactively researched relevant and necessary services for the project | ✅ | ☐ | ☐ |
+| 4 | **Discipline** | Complied with company rules and internship guidelines; maintained office attendance frequency when eligible (approved) | ✅ | ☐ | ☐ |
+| 5 | **Progressive mindset** | Readily accepted feedback and continuously improved myself | ☐ | ✅ | ☐ |
+| 6 | **Communication** | Communicated effectively with the team and proactively asked the mentor when needed | ☐ | ✅ | ☐ |
+| 7 | **Teamwork** | Integrated well into the team and collaborated effectively on the project | ✅ | ☐ | ☐ |
+| 8 | **Problem-solving skills** | Identified problems and proposed appropriate solutions | ☐ | ✅ | ☐ |
+| 9 | **Overall** | General assessment of the entire internship period | ✅ | ☐ | ☐ |
 
 ### Needs Improvement
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization
-* Improve problem-solving thinking
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+* Enhance problem-solving thinking.
+* Further improve communication skills.
+* Increase self-learning capability to work independently without relying on constant guidance from a mentor.
 
