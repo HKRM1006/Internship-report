@@ -28,20 +28,20 @@ pre: " <b> 4.2. </b> "
 #### Hành trình cảm xúc khi làm hackathon (3KA)
 
 - Trước ngày thi, cả đội đều mang tâm lý chung của người lần đầu: sợ chưa đủ giỏi, sợ thất bại, chưa biết bắt đầu từ đâu, và sợ không đủ thời gian
-- Trong 24 giờ, cảm xúc đi qua 3 giai đoạn rõ rệt: **Doubt** (hoang mang, không biết bắt đầu từ đâu) - **Flow** (tập trung, ý tưởng bắt đầu thành hình) - **Pride** (tự hào vì thực sự làm ra được sản phẩm)
+- Trong 24 giờ, cảm xúc đi qua 3 giai đoạn rõ rệt: Doubt (hoang mang, không biết bắt đầu từ đâu) - Flow (tập trung, ý tưởng bắt đầu thành hình) - Pride (tự hào vì thực sự làm ra được sản phẩm)
 - Thử thách lớn nhất không phải là thiếu kiến thức AI hay lần đầu dùng AWS, mà là duy trì được sự tỉnh táo và tinh thần làm việc nhóm khi thiếu ngủ và code liên tục lỗi
-- Bài học: **kết quả cuối cùng không quan trọng bằng những gì học được trong quá trình** - đây cũng là tinh thần chủ đạo mà cả buổi chia sẻ muốn truyền tải
+- Bài học: kết quả cuối cùng không quan trọng bằng những gì học được trong quá trình - đây cũng là tinh thần chủ đạo mà cả buổi chia sẻ muốn truyền tải
 
 #### Từ bài toán thực tế đến sản phẩm - cách các đội tư duy vấn đề (OneTeam, Signal Scout)
 
-- OneTeam xuất phát từ một bài học có thật (McDonald's dừng thử nghiệm AI drive-thru) để chỉ ra rằng: vấn đề không nằm ở "AI có làm được không" mà ở việc **hiểu đúng bản chất bài toán hệ thống** đằng sau (dữ liệu lộn xộn, quy tắc nghiệp vụ chặt, phải xác thực trước khi thực thi)
-- Cách đội xử lý: thiết kế Agent theo vòng lặp rõ ràng **Goal → Plan → Tools → Act → Verify**, và kiến trúc theo hướng "thêm chứ không xây lại" (thêm kênh = thêm adapter, thêm nghiệp vụ = thêm connector) - một tư duy có thể áp dụng cho bất kỳ dự án cá nhân nào muốn mở rộng về sau
-- Signal Scout chia sẻ cách dùng **Value Creation & Delivery Canvas** để làm rõ bài toán kinh doanh trước khi bắt tay viết code, và đặc biệt là thói quen **ước tính chi phí vận hành theo nhiều kịch bản (Min/Mid/Max)** ngay từ giai đoạn ý tưởng - một việc nhiều người tự học thường bỏ qua
+- OneTeam xuất phát từ một bài học có thật (McDonald's dừng thử nghiệm AI drive-thru) để chỉ ra rằng: vấn đề không nằm ở "AI có làm được không" mà ở việc hiểu đúng bản chất bài toán hệ thống đằng sau (dữ liệu lộn xộn, quy tắc nghiệp vụ chặt, phải xác thực trước khi thực thi)
+- Cách đội xử lý: thiết kế Agent theo vòng lặp rõ ràng Goal - Plan - Tools - Act - Verify, và kiến trúc theo hướng "thêm chứ không xây lại" (thêm kênh = thêm adapter, thêm nghiệp vụ = thêm connector) - một tư duy có thể áp dụng cho bất kỳ dự án cá nhân nào muốn mở rộng về sau
+- Signal Scout chia sẻ cách dùng Value Creation & Delivery Canvas để làm rõ bài toán kinh doanh trước khi bắt tay viết code, và đặc biệt là thói quen ước tính chi phí vận hành theo nhiều kịch bản (Min/Mid/Max) ngay từ giai đoạn ý tưởng - một việc nhiều người tự học thường bỏ qua
 
 #### Làm việc dưới áp lực thời gian và nguồn lực hạn chế (3KA, Plan V)
 
 - 3KA chia sẻ thật về những khó khăn kỹ thuật gặp phải: video trực tiếp không ổn định, độ trễ suy luận cao, mất dấu đối tượng giữa các khung hình, chưa từng biết dùng AWS trước đó - nhưng vẫn hoàn thành được sản phẩm nhờ chia nhỏ vấn đề và ưu tiên phần lõi trước
-- Plan V chia sẻ kinh nghiệm chuyển từ quy trình thủ công (đọc tài liệu yêu cầu tay, vẽ kiến trúc từ đầu, đoán chi phí theo kinh nghiệm) sang quy trình có AI hỗ trợ từng bước - cho thấy giá trị của việc **tự động hóa phần lặp lại để dồn thời gian cho phần cần tư duy**
+- Plan V chia sẻ kinh nghiệm chuyển từ quy trình thủ công (đọc tài liệu yêu cầu tay, vẽ kiến trúc từ đầu, đoán chi phí theo kinh nghiệm) sang quy trình có AI hỗ trợ từng bước - cho thấy giá trị của việc tự động hóa phần lặp lại để dồn thời gian cho phần cần tư duy
 
 ### Những Gì Học Được
 

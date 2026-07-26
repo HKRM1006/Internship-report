@@ -28,20 +28,20 @@ pre: " <b> 4.2. </b> "
 #### The emotional journey of a hackathon (3KA)
 
 - Before the competition day, the whole team shared the common mindset of first-timers: fear of not being good enough, fear of failure, not knowing where to start, and fear of running out of time.
-- Over 24 hours, emotions went through 3 distinct stages: **Doubt** (confusion, not knowing where to start) - **Flow** (focus, ideas starting to take shape) - **Pride** (proud of actually building a product).
+- Over 24 hours, emotions went through 3 distinct stages: Doubt (confusion, not knowing where to start) - Flow (focus, ideas starting to take shape) - Pride (proud of actually building a product).
 - The biggest challenge was not a lack of AI knowledge or using AWS for the first time, but maintaining alertness and teamwork spirit while sleep deprived and dealing with continuous code errors.
-- Takeaway: **the final result is not as important as what is learned along the way** - this is also the core spirit that the sharing session aimed to convey.
+- Takeaway: the final result is not as important as what is learned along the way - this is also the core spirit that the sharing session aimed to convey.
 
 #### From real-world problems to products - how teams think about problems (OneTeam, Signal Scout)
 
-- OneTeam started from a true story (McDonald's stopping its AI drive-thru test) to point out that: the problem is not whether "AI can do it," but **correctly understanding the core system problem** behind it (messy data, strict business rules, mandatory verification before execution).
-- How the team handled it: designed the Agent following a clear loop **Goal → Plan → Tools → Act → Verify**, and structured the architecture as "adding rather than rebuilding" (adding a channel = adding an adapter, adding business logic = adding a connector) - a mindset that can be applied to any personal project looking to scale later.
-- Signal Scout shared how they used the **Value Creation & Delivery Canvas** to clarify the business problem before writing code, and specifically the habit of **estimating operating costs across multiple scenarios (Min/Mid/Max)** right from the ideation stage - something many self-taught learners often overlook.
+- OneTeam started from a true story (McDonald's stopping its AI drive-thru test) to point out that: the problem is not whether "AI can do it," but correctly understanding the core system problem behind it (messy data, strict business rules, mandatory verification before execution).
+- How the team handled it: designed the Agent following a clear loop Goal - Plan - Tools - Act - Verify, and structured the architecture as "adding rather than rebuilding" (adding a channel = adding an adapter, adding business logic = adding a connector) - a mindset that can be applied to any personal project looking to scale later.
+- Signal Scout shared how they used the Value Creation & Delivery Canvas to clarify the business problem before writing code, and specifically the habit of estimating operating costs across multiple scenarios (Min/Mid/Max) right from the ideation stage - something many self-taught learners often overlook.
 
 #### Working under pressure of time and limited resources (3KA, Plan V)
 
 - 3KA shared honestly about technical difficulties encountered: unstable live video, high inference latency, losing object tracking across frames, never having used AWS before - but still completing the product by breaking down problems and prioritizing the core first.
-- Plan V shared their experience transitioning from a manual process (reading requirement docs manually, drawing architecture from scratch, guessing costs based on experience) to an AI-assisted step-by-step process - demonstrating the value of **automating repetitive parts to reserve time for parts requiring deep thinking**.
+- Plan V shared their experience transitioning from a manual process (reading requirement docs manually, drawing architecture from scratch, guessing costs based on experience) to an AI-assisted step-by-step process - demonstrating the value of automating repetitive parts to reserve time for parts requiring deep thinking.
 
 ### Key Takeaways
 

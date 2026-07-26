@@ -6,11 +6,12 @@ chapter: false
 pre: " <b> 1.11. </b> "
 ---
 
+**Planned activities for the remaining weeks following the report**
+
 ### Week 11 Objectives:
 
 * Summarize the internship period.
 * Prepare documentation for university submission.
-* Planned activities for the remaining weeks following the report submission.
 
 ### Tasks to be carried out this week (08/10/2026 - 08/14/2026):
 
