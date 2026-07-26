@@ -6,10 +6,12 @@ chapter: false
 pre: " <b> 1.10. </b> "
 ---
 
+**Planned activities for the remaining weeks following the report**
+
+
 ### Week 10 Objectives:
 
 * Review the workshop and learn services capable of improving it.
-* Planned activities for the remaining weeks following the report submission.
 
 ### Tasks to be carried out this week (08/03/2026 - 08/07/2026):
 

@@ -6,10 +6,11 @@ chapter: false
 pre: " <b> 1.10. </b> "
 ---
 
+**Đây là dự định cho các tuần còn lại sau thời điểm viết báo cáo.**
+
 ### Mục tiêu tuần 10
 
 * Đánh giá lại Workshop, học các dịch vụ có khả năng ứng dụng để cải thiện Workshop.
-* Đây là dự định cho các tuần còn lại sau thời điểm viết báo cáo.
 
 ### Các công việc trong tuần (03/08 - 07/08/2026)
 
