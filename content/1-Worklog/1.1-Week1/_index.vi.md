@@ -5,23 +5,24 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-### Mục tiêu tuần 1:
 
-* Làm quen về quy trình, quy định thực tập của chương trinh FCAJ
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Mục tiêu tuần 1
 
-### Các công việc cần triển khai trong tuần này:
+* Làm quen chương trình FCAJ, nội quy và quy trình điểm danh.
+* Tự học tổng quan nền tảng AWS.
 
+### Các công việc trong tuần (01/06 - 05/06/2026)
 
-| Thứ | Công việc                                                                                                                              | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                                                                                      |
-| ---- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| 2    | Tìm hiểu các nội quy, quy định tại đơn vị thực tập. Quy trình đăng kí lên văn phòng cơ chế chấm điểm thực tập | 01/06/2026       | 01/06/2026         | [Nội quy - Quy định](https://hcm-rules.awsfcaj.com/)                                                                |
-| 3    | Tạo tài khoản AWS, thực hiện các bước nhận free credit.                                                                         | 02/06/2026       | 02/06/2026         |                                                                                                                        |
-| 4    | Tìm hiểu về AWS budget và cost explore, cách dọn dẹp tài nguyên tránh phát sinh chi phí.                                     | 03/06/2026       | 03/06/2026         | [Bắt đầu với AWS Budget :: QUẢN LÝ CHI PHÍ VỚI AWS BUDGET](https://000007.awsstudygroup.com/vi/)               |
-| 5    | Học các kiến thức nền tảng về các dịch vụ của AWS: compute/storage/database                                                  | 04/06/2026       | 04/06/2026         | [Khám phá dịch vụ AWS :: Hành trình đầu tiên lên Mây](https://cloudjourney.awsstudygroup.com/vi/1-explore/) |
-| 6    | Làm quen với template báo cáo và học cách vẽ sơ đồ kiến trúc bằng draw.io                                                 | 05/06/2026       | 05/06/2026         |                                                                                                                        |
+| Thứ | Công việc                                                                                                                    | Bắt đầu | Hoàn thành | Nguồn tài liệu                                          |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------ | ---------- | ------------ | ---------------------------------------------------------- |
+| 2    | Đọc nội quy FCAJ, tự tìm hiểu quy trình đăng ký Portal, điểm danh, cơ chế điểm/mộc và hạn nộp hàng tuần. | 01/06/2026 | 01/06/2026   | [Nội quy FCAJ](https://hcm-rules.awsfcaj.com/)               |
+| 3    | Tự học Module 1 bằng các xem video: các nhóm dịch vụ compute/storage/database/networking của AWS và Free Tier.       | 02/06/2026 | 02/06/2026   | [Module 1](https://cloudjourney.awsstudygroup.com/1-explore/) |
+| 4    |  Tự học IAM: user, group, role để áp dụng vào dự án                                                                           | 03/06/2026 | 03/06/2026   |                                                            |
+| 5    | Tạo tài khoản AWS, thực hành các bài Lab liên quan tới Module 1.    | 04/06/2026 | 04/06/2026   |                                                            |
+| 6    | Tổng hợp ghi chú tự học trong tuần, note worklog, làm quen với template báo cáo Hugo.                                              | 05/06/2026 | 05/06/2026   | [Template](https://github.com/thienluhoan/fcj-workshop-template)       |
 
-### Kết quả đạt được tuần 1:
+### Kết quả đạt được
 
-* Hiểu về AWS và nắm được các kiến thức cơ bản về các dịch vụ compute/storage/database
-* Tạo tài khoản AWS và lấy free credit thành công. Làm quen với console và CLI
+1. Nắm được quy trình điểm danh và các quy định của chương trình thực tập.
+2. Tự học xong tổng quan các dịch vụ phổ biến của AWS và các dịch vụ liên quan tới AI.
+

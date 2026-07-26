@@ -22,11 +22,11 @@ At the time i'm writing this report, I have attended 2 events. Each event provid
 
 ### [Event 2](4.2-Event2/)
 
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop
+&emsp;**Event Name:** FCAJ - Agentic AI Build Week
 
-&emsp;**Date & Time:** 09:00, August 13, 2025
+&emsp;**Date & Time:** 09:00, July 25, 2026
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
+&emsp;**Location:** 36th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
 
 &emsp;**Role:** Attendee
 

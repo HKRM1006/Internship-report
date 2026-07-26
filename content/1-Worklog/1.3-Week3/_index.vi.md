@@ -1,59 +1,27 @@
 ---
 title: "Worklog Tuần 3"
-date: 2024-01-01
-weight: 1
+date: 2026-06-15
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu tuần 3
 
-### Mục tiêu tuần 3:
+* Tự học về sagemaker, Amazon AI service.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Các công việc trong tuần (15/06 - 19/06/2026)
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc                                                                                                                                                                              | Bắt đầu | Hoàn thành | Nguồn tài liệu                                                                                                                                                                                                                                          |
+| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2    | Tự học về sagemaker, tạo studio và thực hiện theo hướng dẫn lab liên quan tới feature engineering, thử nghiệm trên tập dữ liệu khác để thành thạo sagemaker hơn. | 16/06/2026 | 16/06/2026   | [SageMaker Workshop](https://000200.awsstudygroup.com/)                                                                                                                                                                                                    |
+| 3    | Học và thực hành quy trình train và finetune mô hình.                                                                                                                            | 16/06/2026 | 16/06/2026   | [SageMaker Workshop](https://000200.awsstudygroup.com/)                                                                                                                                                                                                    |
+| 4    | Tìm hiểu về các dịch vụ AI như Textract, Rekognition, Polly và Lex, thực hành theo hướng dẫn.                                                                               | 17/06/2026 | 17/06/2026   | [Amazon Textract](https://aws.amazon.com/textract/), [Experience Amazon AI services](https://000056.awsstudygroup.com/) |
+| 5    | Thử giải quyết các challenge excercises trong bài Amazon AI services.                                                  | 18/06/2026 | 18/06/2026   | [Challenge Exercises](https://000056.awsstudygroup.com/4-challenge/)                                                                                                                                                                                                                                                           |
+| 6    | Tổng hợp ghi chú tự học trong tuần, note worklog.                                                                                                                                  | 19/06/2026 | 19/06/2026   |                                                                                                                                                                                                                                                            |
 
+### Kết quả đạt được
 
-### Kết quả đạt được tuần 3:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+1. Tự học Sagemaker hiểu được quy trình huấn luyện, finetune và deploy model để sử dụng trong thực tế.
+2. Tự học về các Amazon AI service hiểu được mục đích, cách sử dụng và áp dụng trong dự án thực tế.
 

@@ -8,21 +8,21 @@ pre: " <b> 1.1. </b> "
 
 ### Week 1 Objectives:
 
-* Get familiar with the internship procedures and regulations of the FCAJ program
-* Understand basic AWS services, and how to use the console & CLI.
+* Get acquainted with the FCAJ program, rules, and attendance procedures.
+* Self-study the overview of the AWS platform.
 
-### Tasks to be carried out this week:
+### Tasks to be carried out this week (06/01/2026 - 06/05/2026):
 
 | Day | Task | Start Date | Completion Date | Reference Material |
-| --- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
-| Monday | Learn about the rules and regulations at the internship unit. Office attendance registration process and internship grading mechanism | 01/06/2026 | 01/06/2026 | [Rules - Regulations](https://hcm-rules.awsfcaj.com/) |
-| Tuesday | Create an AWS account and complete the steps to receive free credits. | 02/06/2026 | 02/06/2026 | |
-| Wednesday | Learn about AWS Budget and Cost Explorer, and how to clean up resources to avoid incurring costs. | 03/06/2026 | 03/06/2026 | [Getting Started with AWS Budget :: COST MANAGEMENT WITH AWS BUDGET](https://000007.awsstudygroup.com/vi/) |
-| Thursday | Learn foundational knowledge of AWS services: compute/storage/database | 04/06/2026 | 04/06/2026 | [Explore AWS Services :: First Journey to the Cloud](https://cloudjourney.awsstudygroup.com/vi/1-explore/) |
-| Friday | Get familiar with the report template and learn how to draw architecture diagrams using draw.io | 05/06/2026 | 05/06/2026 | |
+| --- | --- | ---------- | --------------- | ----------------------------------------- |
+| 2 | - Read FCAJ rules and regulations- Self-learn Portal registration procedures, attendance tracking, scoring/stamp mechanism, and weekly submission deadlines | 06/01/2026 | 06/01/2026 | [FCAJ Rules](https://hcm-rules.awsfcaj.com/) |
+| 3 | - Self-study Module 1 by watching videos: AWS compute, storage, database, and networking service groups, along with Free Tier | 06/02/2026 | 06/02/2026 | [Module 1](https://cloudjourney.awsstudygroup.com/1-explore/) |
+| 4 | - Self-study IAM: users, groups, and roles to apply in projects | 06/03/2026 | 06/03/2026 | |
+| 5 | - Create an AWS account- Practice lab exercises related to Module 1 | 06/04/2026 | 06/04/2026 | |
+| 6 | - Summarize self-study notes for the week- Write worklog notes- Get familiar with the Hugo report template | 06/05/2026 | 06/05/2026 | [Template](https://github.com/thienluhoan/fcj-workshop-template) |
 
 ### Week 1 Achievements:
 
-* Understood AWS and grasped basic concepts of compute/storage/database services
-* Successfully created an AWS account and claimed free credits. Got familiar with the console and CLI
+* Understood the attendance procedures and regulations of the internship program.
+* Completed self-study on the overview of popular AWS services and AI-related services.
 

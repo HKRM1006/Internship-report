@@ -1,57 +1,29 @@
 ---
 title: "Week 7 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-07-13
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 7 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Collaborate with the team to integrate DynamoDB for file metadata storage.
+* Officially integrate the AI layer (image recognition, text extraction) into the upload workflow and store results associated with metadata.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to be carried out this week (07/13/2026 - 07/17/2026):
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | ---------- | --------------- | ----------------------------------------- |
+| 2 | - Create a DynamoDB database to store file information, and connect the backend to write/retrieve metadata | 07/13/2026 | 07/13/2026 | [DynamoDB lab](https://000078.awsstudygroup.com) |
+| 3 | - Design the schema to store AI analysis results (image labels, extracted text) in DynamoDB, ensuring separation and consistency with the original file metadata | 07/14/2026 | 07/14/2026 | |
+| 4 | - Officially integrate the image content recognition service into the upload workflow to automatically tag and store results along with file metadata | 07/15/2026 | 07/15/2026 | [AI services](https://000056.awsstudygroup.com) |
+| 5 | - Officially integrate the text extraction service for documents and images containing text, and store the extracted text with metadata | 07/16/2026 | 07/16/2026 | |
+| 6 | - Test the entire image recognition and text extraction workflow with various file types, and handle unsupported file cases | 07/17/2026 | 07/17/2026 | |
 
 ### Week 7 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* File information is stored and queried from DynamoDB, separated from the file content on the storage platform.
+* Designed a separate schema for storing AI results that remains consistent with the original metadata.
+* Uploaded images are automatically tagged and documents automatically extracted for text; tested successfully across various file types and unsupported scenarios.
 
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...

@@ -1,125 +1,73 @@
 ---
 title: "Event 2"
-date: 2024-01-01
-weight: 1
+date: 2026-07-26
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch “FCAJ - Agentic AI Build Week”
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Tạo không gian để các đội đã tham gia **Agentic AI Build Week (AABW)** quay lại chia sẻ hành trình thực tế: từ lúc lên ý tưởng, xây dựng sản phẩm, đến lúc demo và nhận kết quả
+- Lan tỏa kinh nghiệm thực chiến khi làm việc với Agentic AI trên AWS thay vì chỉ dừng ở lý thuyết
+- Truyền cảm hứng và trang bị góc nhìn thực tế cho những người sắp/đang tự học, tự làm workshop cá nhân về Agentic AI
+- Chỉ ra những sai lầm, khó khăn và cách vượt qua áp lực thời gian khi xây dựng sản phẩm AI trong thời gian ngắn
+- Gợi mở cách áp dụng quy trình, tư duy thiết kế và kinh nghiệm của các đội vào việc tự thực hành, tự xây dựng dự án cá nhân
 
-### Danh Sách Diễn Giả
+### Danh Sách Các Đội Chia Sẻ
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **OneTeam** (Anh Duy, Trần Đông, Đoàn Trung, Minh Việt, Anshul Roy) - chia sẻ hành trình xây dựng **KFC Bot Agent**
+- **3KA** (Huỳnh An Khương, Nguyễn Quốc Huy, Ngô Quang Khôi, Hoàng Lê Thành Đức, Đặng Nguyễn Phước Lộc, Đặng Trường Hưng) - chia sẻ hành trình 24 giờ xây dựng **S.H.E.P.H.E.R.D**
+- **Plan V** (Phạm Tiến Thuận Phát, Huỳnh Hoàng Long, Lê Minh Nghĩa, Trần Đại Vi, Nguyễn An) - chia sẻ quá trình xây dựng **Solution Architect Professional Native App**
+- **Signal Scout Team** (Lê Tấn Lực, Đỗ Hoàng Hiếu, Triệu Quốc Hào, Nguyễn Văn Duy Khiêm, Nguyễn Công Minh, Nguyễn Trần Minh Quân) - chia sẻ hành trình xây dựng **Signal Scout**
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Hành trình cảm xúc khi làm hackathon (3KA)
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+- Trước ngày thi, cả đội đều mang tâm lý chung của người lần đầu: sợ chưa đủ giỏi, sợ thất bại, chưa biết bắt đầu từ đâu, và sợ không đủ thời gian
+- Trong 24 giờ, cảm xúc đi qua 3 giai đoạn rõ rệt: **Doubt** (hoang mang, không biết bắt đầu từ đâu) - **Flow** (tập trung, ý tưởng bắt đầu thành hình) - **Pride** (tự hào vì thực sự làm ra được sản phẩm)
+- Thử thách lớn nhất không phải là thiếu kiến thức AI hay lần đầu dùng AWS, mà là duy trì được sự tỉnh táo và tinh thần làm việc nhóm khi thiếu ngủ và code liên tục lỗi
+- Bài học: **kết quả cuối cùng không quan trọng bằng những gì học được trong quá trình** - đây cũng là tinh thần chủ đạo mà cả buổi chia sẻ muốn truyền tải
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Từ bài toán thực tế đến sản phẩm - cách các đội tư duy vấn đề (OneTeam, Signal Scout)
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+- OneTeam xuất phát từ một bài học có thật (McDonald's dừng thử nghiệm AI drive-thru) để chỉ ra rằng: vấn đề không nằm ở "AI có làm được không" mà ở việc **hiểu đúng bản chất bài toán hệ thống** đằng sau (dữ liệu lộn xộn, quy tắc nghiệp vụ chặt, phải xác thực trước khi thực thi)
+- Cách đội xử lý: thiết kế Agent theo vòng lặp rõ ràng **Goal → Plan → Tools → Act → Verify**, và kiến trúc theo hướng "thêm chứ không xây lại" (thêm kênh = thêm adapter, thêm nghiệp vụ = thêm connector) - một tư duy có thể áp dụng cho bất kỳ dự án cá nhân nào muốn mở rộng về sau
+- Signal Scout chia sẻ cách dùng **Value Creation & Delivery Canvas** để làm rõ bài toán kinh doanh trước khi bắt tay viết code, và đặc biệt là thói quen **ước tính chi phí vận hành theo nhiều kịch bản (Min/Mid/Max)** ngay từ giai đoạn ý tưởng - một việc nhiều người tự học thường bỏ qua
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### Làm việc dưới áp lực thời gian và nguồn lực hạn chế (3KA, Plan V)
 
-#### Domain-Driven Design (DDD)
-
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
-
-#### Event-Driven Architecture
-
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+- 3KA chia sẻ thật về những khó khăn kỹ thuật gặp phải: video trực tiếp không ổn định, độ trễ suy luận cao, mất dấu đối tượng giữa các khung hình, chưa từng biết dùng AWS trước đó - nhưng vẫn hoàn thành được sản phẩm nhờ chia nhỏ vấn đề và ưu tiên phần lõi trước
+- Plan V chia sẻ kinh nghiệm chuyển từ quy trình thủ công (đọc tài liệu yêu cầu tay, vẽ kiến trúc từ đầu, đoán chi phí theo kinh nghiệm) sang quy trình có AI hỗ trợ từng bước - cho thấy giá trị của việc **tự động hóa phần lặp lại để dồn thời gian cho phần cần tư duy**
 
 ### Những Gì Học Được
 
-#### Tư Duy Thiết Kế
+#### Bắt đầu từ bài toán, không bắt đầu từ công nghệ
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+Tất cả các đội đều dành thời gian đầu để hiểu rõ vấn đề thực tế trước khi chọn công cụ AWS nào để dùng. Khi tự làm workshop cá nhân, nên viết rõ "vấn đề mình đang giải là gì" trước khi mở IDE
 
-#### Kiến Trúc Kỹ Thuật
+#### Thiết kế Agent theo vòng lặp Goal - Plan - Tools - Act - Verify
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+Đây là khung tư duy dễ áp dụng nhất để tự xây dựng một Agent thật sự "hành động" thay vì chỉ trả lời - có thể dùng làm khung sườn cho bất kỳ project cá nhân nào về Agentic AI
 
-#### Chiến Lược Hiện Đại Hóa
+#### Ước tính chi phí và thiết kế để mở rộng ngay từ đầu
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+Dù chỉ là dự án cá nhân hay workshop nhỏ, nên tập thói quen phác thảo chi phí vận hành sơ bộ và thiết kế kiến trúc theo module/adapter, thay vì viết code chỉ đủ chạy demo một lần
 
-### Ứng Dụng Vào Công Việc
+#### Chấp nhận sai và học từ tốc độ, không phải từ sự hoàn hảo
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+Bài học lớn nhất từ phần chia sẻ của 3KA: cứ bắt tay làm dù chưa có nền tảng vững, sai ở đâu sửa ở đó - tinh thần này áp dụng trực tiếp được vào cách tự luyện tập, tự làm workshop một mình mà không chờ "đủ giỏi mới bắt đầu"
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+- Không khí buổi chia sẻ rất gần gũi và thật: các đội không chỉ show sản phẩm đẹp mà kể lại cả phần "hậu trường" - những lúc code lỗi, thiếu ngủ, hoang mang - giúp người nghe (đặc biệt là người mới) bớt áp lực và có động lực tự bắt tay làm hơn là chỉ ngồi học lý thuyết
+- Học được cách nhìn một dự án Agentic AI trọn vẹn từ góc độ người trong cuộc: từ ý tưởng, kiến trúc, chi phí, đến cảm xúc thật khi làm - điều mà đọc tài liệu hay xem demo đơn thuần không truyền tải được
 
 #### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+
+![Event2-1](/images/Event2-1.png)
+![Event2-2](/images/Event2-2.png)
+

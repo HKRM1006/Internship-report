@@ -1,59 +1,27 @@
 ---
 title: "Worklog Tuần 8"
-date: 2024-01-01
-weight: 1
+date: 2026-07-20
+weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu tuần 8
 
-### Mục tiêu tuần 8:
+* Cùng nhóm thêm đăng nhập người dùng bằng Amazon Cognito.
+* Xây dựng và hoàn thiện chức năng hỏi đáp/tóm tắt nội dung file bằng mô hình ngôn ngữ (Bedrock), lưu kết quả theo từng người dùng.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Các công việc trong tuần (20/07 - 24/07/2026)
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Bắt đầu | Hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | Thiết lập Amazon Cognito cho đăng ký/đăng nhập, cấu hình API chỉ chấp nhận yêu cầu đã xác thực hợp lệ. | 20/07/2026 | 20/07/2026 | [Cognito lab](https://000081.awsstudygroup.com) |
+| 3 | Kết nối chức năng hỏi đáp với dữ liệu văn bản đã trích xuất ở, dùng làm ngữ cảnh để trả lời câu hỏi về nội dung file. | 21/07/2026 | 21/07/2026 |  |
+| 4 | Thiết kế luồng gọi mô hình ngôn ngữ qua Bedrock để hỏi đáp/tóm tắt nội dung file, hỗ trợ trả lời theo ngôn ngữ câu hỏi. | 22/07/2026 | 22/07/2026 | [Bedrock](https://docs.aws.amazon.com/bedrock/) |
+| 5 | Tích hợp chức năng hỏi đáp vào backend, gắn với người dùng đã xác thực để lưu kết quả phân tích riêng theo từng người. | 23/07/2026 | 23/07/2026 |  |
+| 6 | Hoàn thiện Workshop, chuẩn bị viết báo cáo kịp deadline 31/7 | 24/07/2026 | 24/07/2026 |  |
 
+### Kết quả đạt được
 
-### Kết quả đạt được tuần 8:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+1. Hoàn thiện toàn bộ Workshop, chuẩn bị sẵn sàng để hoàn thành báo cáo kịp deadline.
 
