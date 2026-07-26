@@ -1,5 +1,5 @@
 ---
-title: "WorkLog"
+title: "Worklog"
 date: 2026-06-23
 weight: 1
 chapter: false
@@ -24,7 +24,7 @@ pre: " <b> 1. </b> "
 
 **Week 9:** [Writing and finalizing the internship report](1.9-week9/)
 
-**Week 10:** [(Planning) Reviewing the workshop and exploring Titan Embeddings, Macie, WAF, and Bedrock Knowledge Bases](1.10-week10/)
+**Week 10:** [**(Planning)** Reviewing the workshop and exploring Titan Embeddings, Macie, WAF, and Bedrock Knowledge Bases](1.10-week10/)
 
-**Week 11:** [(Planning) Summarizing the internship period and finalizing documentation for university submission](1.11-week11/)
+**Week 11:** [**(Planning)** Summarizing the internship period and finalizing documentation for university submission](1.11-week11/)
 
