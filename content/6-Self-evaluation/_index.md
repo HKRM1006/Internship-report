@@ -1,14 +1,13 @@
 ---
 title: "Self-Assessment"
-date: 2026-07-23
+date: 2026-07-23s
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
 
-During my internship at **Amazon Web Services Vietnam Company Limited** (Workforce Bootcamp - First Cloud AI Journey) from **01/06/2026** to **14/08/2026**, I participated in developing the **InsightShare** project—an image and document sharing application integrated with information retrieval and Large Language Models (LLM) for Q&A. Through this project, I strengthened my **knowledge regarding AWS S3, Lambda, API, and Bedrock**.
+During my internship at **Amazon Web Services Vietnam Company Limited** (Workforce Bootcamp - First Cloud AI Journey) from **01/06/2026** to **14/08/2026**, I participated in developing the **InsightShare** project - an image and document sharing application integrated with information retrieval and Large Language Models (LLM) for Q&A. Through this project, I strengthened my **knowledge regarding AWS S3, Lambda, API, and Bedrock**.
 To objectively reflect on my internship, I would like to evaluate myself based on the following criteria:
-
 
 | No. | Criteria | Description | Good | Fair | Average |
 | --- | --- | --- | --- | --- | --- |

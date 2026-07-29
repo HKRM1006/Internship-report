@@ -5,10 +5,9 @@ weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-
 # AMAZON GUARDDUTY – INTELLIGENT THREAT DETECTION SERVICE
 
-Amazon GuardDuty is a fully managed threat detection service provided by AWS. It continuously monitors your accounts, workloads, and data for malicious or unauthorized behavior. The key advantage of Amazon GuardDuty is that it requires no agent installation, no additional infrastructure deployment, and no log analysis server maintenance—simply activate the service.
+Amazon GuardDuty is a fully managed threat detection service provided by AWS. It continuously monitors your accounts, workloads, and data for malicious or unauthorized behavior. The key advantage of Amazon GuardDuty is that it requires no agent installation, no additional infrastructure deployment, and no log analysis server maintenance - simply activate the service.
 
 Key takeaways:
 
@@ -38,4 +37,3 @@ Suppose one of your EC2 instances suddenly and silently sends traffic to a black
 ### Picture
 
 ![Blog1](/images/blog1.png)
-

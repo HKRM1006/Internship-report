@@ -5,10 +5,9 @@ weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-
 # AMAZON GUARDDUTY – DỊCH VỤ PHÁT HIỆN MỐI ĐE DỌA THÔNG MINH
 
-Amazon GuardDuty là dịch vụ phát hiện mối đe dọa được quản lý hoàn toàn bởi AWS. Nó liên tục giám sát tài khoản, workload và dữ liệu của bạn để tìm kiếm các hành vi bất thường hoặc độc hại. Điểm đặc biệt nhất của Amazon GuardDuty là bạn không cần cài đặt Agent, không cần triển khai thêm hạ tầng hay duy trì server phân tích log — chỉ cần kích hoạt dịch vụ.
+Amazon GuardDuty là dịch vụ phát hiện mối đe dọa được quản lý hoàn toàn bởi AWS. Nó liên tục giám sát tài khoản, workload và dữ liệu của bạn để tìm kiếm các hành vi bất thường hoặc độc hại. Điểm đặc biệt nhất của Amazon GuardDuty là bạn không cần cài đặt Agent, không cần triển khai thêm hạ tầng hay duy trì server phân tích log - chỉ cần kích hoạt dịch vụ.
 
 Các điểm chính cần nắm:
 
@@ -38,6 +37,3 @@ Giả sử một EC2 instance của bạn bỗng dưng âm thầm gửi traffic 
 ### Ảnh
 
 ![Blog1](/images/blog1.png)
-
-
-
