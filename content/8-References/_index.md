@@ -11,5 +11,5 @@ pre: " <b> 8. </b> "
 | Resource           | Link                                                                                      |
 | ------------------ | ----------------------------------------------------------------------------------------- |
 | Report source code | [github/HKRM1006/Internship-report](https://github.com/HKRM1006/Internship-report)     |
-| Demo   | [insightshare.dangthaikhang34.workers.dev](https://insightshare.dangthaikhang34.workers.dev) |
+| Demo   | [Demo InsightShare](https://insightshare.dangthaikhang34.workers.dev) |
 

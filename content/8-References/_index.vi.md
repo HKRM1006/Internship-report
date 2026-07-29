@@ -11,7 +11,7 @@ pre: " <b> 8. </b> "
 | Nguồn                 | Liên kết                                                                                |
 | ---------------------- | ----------------------------------------------------------------------------------------- |
 | Mã nguồn báo cáo            | [github/HKRM1006/Internship-report](https://github.com/HKRM1006/Internship-report)                                             |
-| Demo | [insightshare.dangthaikhang34.workers.dev](https://insightshare.dangthaikhang34.workers.dev) |
+| Demo | [Demo InsightShare](https://insightshare.dangthaikhang34.workers.dev) |
 
 
 
