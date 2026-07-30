@@ -14,3 +14,7 @@ Bài viết này giới thiệu về Amazon GuardDuty, một dịch vụ phát h
 
 Bài viết này chia sẻ các thực hành tốt nhất để tối ưu hóa Amazon Bedrock Guardrails trong quy trình tạo mã tự động bằng AI, giúp khắc phục rủi ro nghẽn API, chi phí cao và độ trễ do áp dụng sai cấu hình chatbot thông thường. Bằng cách triển khai cơ chế kiểm tra theo mốc (checkpoint-based), tăng khoảng thời gian kiểm tra streaming và phân loại rủi ro linh hoạt qua API `ApplyGuardrail`, các đội ngũ phát triển có thể ngăn chặn hiệu quả việc rò rỉ dữ liệu nhạy cảm mà vẫn đảm bảo hiệu năng tối ưu cho hệ thống lập trình quy mô lớn.
 
+### [Monitor Amazon SageMaker Pipelines Cross-Account with Custom Amazon CloudWatch Dashboards](3.3-Blog3/)
+
+Bài viết này giới thiệu giải pháp giám sát Amazon SageMaker Pipelines đa tài khoản và đa khu vực thông qua kiến trúc hub-and-spoke không máy chủ (serverless) hướng sự kiện. Bằng cách kết hợp Amazon EventBridge, AWS Lambda, DynamoDB và tùy chỉnh CloudWatch Dashboard, giải pháp cho phép tự động thu thập và tập trung dữ liệu trạng thái pipeline từ các tài khoản vệ tinh về một bảng điều khiển duy nhất, giúp các đội ngũ MLOps dễ dàng theo dõi và xử lý sự cố kịp thời mà không cần chuyển đổi qua lại giữa các môi trường.
+

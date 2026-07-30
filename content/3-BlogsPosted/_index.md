@@ -14,3 +14,7 @@ This blog introduces Amazon GuardDuty, an intelligent, fully managed threat dete
 
 This blog shares best practices for optimizing Amazon Bedrock Guardrails in AI-driven code generation workflows, addressing challenges like API throttling, elevated costs, and added latency caused by misapplying standard chatbot configurations. By implementing checkpoint-based evaluations, increasing streaming intervals, and applying risk-based scanning with the `ApplyGuardrail` API, development teams can effectively prevent sensitive data leaks while maintaining optimal performance in high-throughput coding environments.
 
+### [Monitor Amazon SageMaker Pipelines Cross-Account with Custom Amazon CloudWatch Dashboards](3.3-Blog3/)
+
+This blog introduces a serverless, event-driven solution for monitoring cross-account and multi-region Amazon SageMaker Pipelines using a custom Amazon CloudWatch Dashboard. Built on a hub-and-spoke architecture leveraging Amazon EventBridge, AWS Lambda, and DynamoDB, it automatically aggregates pipeline execution data from satellite accounts into a single centralized console. This empowers MLOps teams to track pipeline statuses, accelerate troubleshooting, and maintain full operational visibility without the hassle of constantly switching between AWS accounts and regions.
+
