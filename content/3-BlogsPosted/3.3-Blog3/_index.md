@@ -35,5 +35,5 @@ An organization has 3 separate AWS accounts for Dev, Test, and Production enviro
 
 ### Image
 
-![Blog3](/images/blog3.png)
+![Blog3](/images/blog3.PNG)
 
