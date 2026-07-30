@@ -30,7 +30,7 @@ The numbered steps match the arrows in the architecture diagram, in order:
 5. **Lambda → DynamoDB**: file metadata, AI labels and extracted text are written to **Amazon DynamoDB**, which powers content-based search.
 6. **Monitoring & security**: **Amazon CloudWatch** collects logs and metrics; an **IAM Role** grants least-privilege access to each service.
 
-![InsightShare Architecture](/images/5-Workshop/5.1-Workshop-overview/architecture_2.drawio.png)
+![InsightShare Architecture](/images/5-Workshop/5.1-Workshop-overview/architecture_3.png)
 
 #### AWS services used
 

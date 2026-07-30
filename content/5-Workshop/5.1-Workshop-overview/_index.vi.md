@@ -11,6 +11,7 @@ pre: " <b> 5.1. </b> "
 **InsightShare** là một ứng dụng web serverless để tải lên, phân tích và chia sẻ ảnh và tài liệu trên AWS. Nó dùng các dịch vụ AI gọi sẵn của AWS để đọc nội dung mỗi file khi tải lên, nhờ vậy tìm file được theo nội dung và chia sẻ qua link có thời hạn.
 
 Nền tảng được xây trên:
+
 - **Amazon S3 + presigned URL**: lưu trữ file riêng tư; trình duyệt tải lên và tải xuống trực tiếp qua link ký có thời hạn ngắn.
 - **AWS Lambda + Amazon API Gateway**: back-end Python không phải quản lý máy chủ, expose thành API HTTP.
 - **Amazon Cognito**: đăng nhập người dùng qua Hosted UI, cô lập theo claim `sub` trong JWT để mỗi người chỉ thấy file của mình.
@@ -29,7 +30,7 @@ Các bước đánh số khớp với các mũi tên trong sơ đồ kiến trú
 5. **Lambda → DynamoDB**: metadata của file, nhãn AI và văn bản trích được ghi vào **Amazon DynamoDB**, phục vụ tìm kiếm theo nội dung.
 6. **Giám sát & bảo mật**: **Amazon CloudWatch** thu thập log và số liệu; **IAM Role** cấp quyền tối thiểu cho từng dịch vụ.
 
-![Kiến trúc InsightShare](/images/5-Workshop/5.1-Workshop-overview/insightshare_architecture-v6.png)
+![Kiến trúc InsightShare](/images/5-Workshop/5.1-Workshop-overview/architecture_3.png)
 
 #### Các dịch vụ AWS sử dụng
 
@@ -46,3 +47,4 @@ Các bước đánh số khớp với các mũi tên trong sơ đồ kiến trú
 | Amazon Bedrock (Claude) | Trả lời câu hỏi và tóm tắt tài liệu theo ngôn ngữ câu hỏi | Model Claude host sẵn, không train; biến văn bản đã trích thành câu trả lời trực tiếp chỉ với một lời gọi API |
 | Amazon CloudWatch | Ghi log, số liệu và cảnh báo | Giám sát tập trung cho Lambda và API Gateway để gỡ lỗi và theo dõi chi phí/mức dùng |
 | AWS IAM | Kiểm soát quyền theo nguyên tắc tối thiểu | Cấp cho mỗi thành phần đúng quyền cần thiết, giữ file không công khai |
+
