@@ -30,7 +30,7 @@ Các bước đánh số khớp với các mũi tên trong sơ đồ kiến trú
 5. **Lambda → DynamoDB**: metadata của file, nhãn AI và văn bản trích được ghi vào **Amazon DynamoDB**, phục vụ tìm kiếm theo nội dung.
 6. **Giám sát & bảo mật**: **Amazon CloudWatch** thu thập log và số liệu; **IAM Role** cấp quyền tối thiểu cho từng dịch vụ.
 
-![Kiến trúc InsightShare](/images/5-Workshop/5.1-Workshop-overview/architecture_3.png)
+![Kiến trúc InsightShare](/images/5-Workshop/5.1-Workshop-overview/architecture_4.png)
 
 #### Các dịch vụ AWS sử dụng
 
