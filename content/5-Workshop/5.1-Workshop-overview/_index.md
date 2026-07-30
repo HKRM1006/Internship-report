@@ -11,6 +11,7 @@ pre: " <b> 5.1. </b> "
 **InsightShare** is a serverless web application for uploading, analyzing and sharing images and documents on AWS. It uses ready-to-call AWS AI services to read each file on upload, so files are searchable by content and shared through time-limited links.
 
 The platform is built on:
+
 - **Amazon S3 + presigned URLs**: private file storage; the browser uploads and downloads directly through short-lived signed links.
 - **AWS Lambda + Amazon API Gateway**: a Python back-end with no servers to manage, exposed as an HTTP API.
 - **Amazon Cognito**: user sign-in through the Hosted UI, scoped by the JWT `sub` claim so each user sees only their own files.
@@ -29,7 +30,7 @@ The numbered steps match the arrows in the architecture diagram, in order:
 5. **Lambda → DynamoDB**: file metadata, AI labels and extracted text are written to **Amazon DynamoDB**, which powers content-based search.
 6. **Monitoring & security**: **Amazon CloudWatch** collects logs and metrics; an **IAM Role** grants least-privilege access to each service.
 
-![InsightShare Architecture](/images/5-Workshop/5.1-Workshop-overview/insightshare_architecture-v6.png)
+![InsightShare Architecture](/images/5-Workshop/5.1-Workshop-overview/architecture_2.drawio.png)
 
 #### AWS services used
 
@@ -46,3 +47,4 @@ The numbered steps match the arrows in the architecture diagram, in order:
 | Amazon Bedrock (Claude) | Answers questions and summarizes a document in the same language as the question | Hosted Claude model, no training; turns extracted text into direct answers with one API call |
 | Amazon CloudWatch | Logging, metrics and alarms | Central monitoring for Lambda and API Gateway to debug and watch cost/usage |
 | AWS IAM | Least-privilege access control | Grants each component only the permissions it needs, keeping files non-public |
+
